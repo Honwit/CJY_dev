@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>spcDev3</class>
- <widget class="QWidget" name="spcDev3">
+ <class>spcDev1</class>
+ <widget class="QWidget" name="spcDev1">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,91 +13,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QGroupBox" name="TongjiBox_7">
-   <property name="geometry">
-    <rect>
-     <x>1180</x>
-     <y>400</y>
-     <width>171</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="title">
-    <string>实测性能</string>
-   </property>
-   <widget class="QLabel" name="label7_1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM&lt;LSL=0.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label7_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM&gt;USL=0.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label7_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>151</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM Total=0.00</string>
-    </property>
-   </widget>
-  </widget>
   <widget class="QGroupBox" name="TongjiBox">
    <property name="geometry">
     <rect>
      <x>1070</x>
-     <y>160</y>
+     <y>170</y>
      <width>161</width>
      <height>161</height>
     </rect>
@@ -112,7 +32,7 @@
    <property name="title">
     <string>统计值</string>
    </property>
-   <widget class="QLabel" name="label1_1">
+   <widget class="QLabel" name="label1_5">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -132,7 +52,7 @@
      <string>样本数=100</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label1_2">
+   <widget class="QLabel" name="label1_6">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -152,7 +72,7 @@
      <string>平均数=0.00</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label1_3">
+   <widget class="QLabel" name="label1_7">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -172,7 +92,7 @@
      <string>最大值=0.00</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label1_4">
+   <widget class="QLabel" name="label1_8">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -193,10 +113,38 @@
     </property>
    </widget>
   </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>1450</x>
+     <y>40</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>设定外径值：</string>
+   </property>
+  </widget>
+  <widget class="QChartView" name="chartViewX">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>640</y>
+     <width>1901</width>
+     <height>321</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>1090</x>
+     <x>1060</x>
      <y>80</y>
      <width>191</width>
      <height>41</height>
@@ -204,183 +152,12 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>23</pointsize>
+     <pointsize>24</pointsize>
     </font>
    </property>
    <property name="text">
     <string>实际公差值：</string>
    </property>
-  </widget>
-  <widget class="QChartView" name="chartViewBar">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>30</y>
-     <width>1031</width>
-     <height>571</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit2">
-   <property name="geometry">
-    <rect>
-     <x>1620</x>
-     <y>80</y>
-     <width>113</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>0.00</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit1">
-   <property name="geometry">
-    <rect>
-     <x>1620</x>
-     <y>40</y>
-     <width>113</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>0.00</string>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="TongjiBox_4">
-   <property name="geometry">
-    <rect>
-     <x>1720</x>
-     <y>160</y>
-     <width>181</width>
-     <height>191</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="title">
-    <string>工序能力（组内）</string>
-   </property>
-   <widget class="QLabel" name="label4_1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Cpk=0.000000</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label4_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Cp =0.000000</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label4_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>CpL=0.000000</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label4_4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>120</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>CpU=0.000000</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label4_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>150</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>CpM=0.000000</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QLabel" name="label1_10">
    <property name="geometry">
@@ -393,402 +170,20 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>18</pointsize>
      <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>机器3SPC:</string>
+    <string>机器1SPC:</string>
    </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>1280</x>
-     <y>80</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>23</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="TongjiBox_8">
-   <property name="geometry">
-    <rect>
-     <x>1350</x>
-     <y>400</y>
-     <width>181</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="title">
-    <string>预期性能（组内）</string>
-   </property>
-   <widget class="QLabel" name="label8_3">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>151</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM Total=0.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label8_1">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM&lt;LSL=0.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label8_2">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>60</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM&gt;USL=0.00</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QChartView" name="chartViewX">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>640</y>
-     <width>1901</width>
-     <height>321</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>1280</x>
-     <y>30</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>23</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>1480</x>
-     <y>80</y>
-     <width>131</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>设定公差值：</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>1090</x>
-     <y>20</y>
-     <width>191</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>23</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>实际外径值：</string>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="TongjiBox_9">
-   <property name="geometry">
-    <rect>
-     <x>1530</x>
-     <y>400</y>
-     <width>181</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="title">
-    <string>预期性能（组外）</string>
-   </property>
-   <widget class="QLabel" name="label9_2">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>60</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM&gt;USL=0.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label9_1">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM&lt;LSL=0.00</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label9_3">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>151</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>PPM Total=0.00</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="TongjiBox_6">
-   <property name="geometry">
-    <rect>
-     <x>1070</x>
-     <y>400</y>
-     <width>111</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="title">
-    <string>其他值</string>
-   </property>
-   <widget class="QLabel" name="label6_1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Ca=0.00</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="TongjiBox_2">
-   <property name="geometry">
-    <rect>
-     <x>1230</x>
-     <y>160</y>
-     <width>181</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="title">
-    <string>常量</string>
-   </property>
-   <widget class="QLabel" name="label2_1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>子组大小=5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label2_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>151</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>规格上限=0.000</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label2_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>141</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>目标值=0.900</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label2_4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>120</y>
-      <width>161</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>规格下限=0.000</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QGroupBox" name="TongjiBox_3">
    <property name="geometry">
     <rect>
      <x>1410</x>
-     <y>160</y>
+     <y>170</y>
      <width>311</width>
      <height>201</height>
     </rect>
@@ -803,7 +198,7 @@
    <property name="title">
     <string>计算值</string>
    </property>
-   <widget class="QLabel" name="label3_1">
+   <widget class="QLabel" name="label3_7">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -823,7 +218,7 @@
      <string>标准差（组间）=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label3_2">
+   <widget class="QLabel" name="label3_8">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -843,7 +238,7 @@
      <string>标准差（组内）=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label3_3">
+   <widget class="QLabel" name="label3_9">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -863,7 +258,7 @@
      <string>标准差（组间/组内）=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label3_4">
+   <widget class="QLabel" name="label3_10">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -883,7 +278,7 @@
      <string>标准差（整体）=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label3_5">
+   <widget class="QLabel" name="label3_11">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -903,7 +298,7 @@
      <string>正3倍标准差=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label3_6">
+   <widget class="QLabel" name="label3_12">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -924,29 +319,178 @@
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="spc_btn1">
+  <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>1750</x>
-     <y>40</y>
-     <width>101</width>
+     <x>1260</x>
+     <y>80</y>
+     <width>131</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>16</pointsize>
+     <pointsize>24</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>返回</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>1450</x>
+     <y>80</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>设定公差值：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit2">
+   <property name="geometry">
+    <rect>
+     <x>1590</x>
+     <y>80</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0.00</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>20</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>实际外径值：</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="TongjiBox_8">
+   <property name="geometry">
+    <rect>
+     <x>1350</x>
+     <y>410</y>
+     <width>181</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>预期性能（组内）</string>
+   </property>
+   <widget class="QLabel" name="label8_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM Total=0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label8_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM&lt;LSL=0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label8_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM&gt;USL=0.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QChartView" name="chartViewBar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>1031</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QGroupBox" name="TongjiBox_5">
    <property name="geometry">
     <rect>
      <x>1710</x>
-     <y>400</y>
+     <y>410</y>
      <width>181</width>
      <height>191</height>
     </rect>
@@ -961,7 +505,7 @@
    <property name="title">
     <string>工序能力（组外）</string>
    </property>
-   <widget class="QLabel" name="label5_1">
+   <widget class="QLabel" name="label5_6">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -981,7 +525,7 @@
      <string>Ppk=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label5_2">
+   <widget class="QLabel" name="label5_7">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1001,7 +545,7 @@
      <string>Pp =0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label5_3">
+   <widget class="QLabel" name="label5_8">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1021,7 +565,7 @@
      <string>PpL=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label5_4">
+   <widget class="QLabel" name="label5_9">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1041,7 +585,7 @@
      <string>PpU=0.000000</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label5_5">
+   <widget class="QLabel" name="label5_10">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -1062,28 +606,484 @@
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>1480</x>
-     <y>40</y>
+     <x>1260</x>
+     <y>30</y>
      <width>131</width>
-     <height>31</height>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="TongjiBox_9">
+   <property name="geometry">
+    <rect>
+     <x>1530</x>
+     <y>410</y>
+     <width>181</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>预期性能（组外）</string>
+   </property>
+   <widget class="QLabel" name="label9_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM&gt;USL=0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label9_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM&lt;LSL=0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label9_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM Total=0.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit1">
+   <property name="geometry">
+    <rect>
+     <x>1590</x>
+     <y>40</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>设定外径值：</string>
+    <string>0.00</string>
    </property>
+  </widget>
+  <widget class="QGroupBox" name="TongjiBox_6">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>410</y>
+     <width>111</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>其他值</string>
+   </property>
+   <widget class="QLabel" name="label6_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ca=0.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="TongjiBox_7">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>410</y>
+     <width>171</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>实测性能</string>
+   </property>
+   <widget class="QLabel" name="label7_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM&lt;LSL=0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label7_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM&gt;USL=0.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label7_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PPM Total=0.00</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="TongjiBox_4">
+   <property name="geometry">
+    <rect>
+     <x>1720</x>
+     <y>170</y>
+     <width>181</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>工序能力（组内）</string>
+   </property>
+   <widget class="QLabel" name="label4_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cpk=0.000000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label4_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cp =0.000000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label4_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CpL=0.000000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label4_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CpU=0.000000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label4_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CpM=0.000000</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="spc_btn1">
+   <property name="geometry">
+    <rect>
+     <x>1760</x>
+     <y>40</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="TongjiBox_2">
+   <property name="geometry">
+    <rect>
+     <x>1230</x>
+     <y>170</y>
+     <width>181</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>常量</string>
+   </property>
+   <widget class="QLabel" name="label2_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>子组大小=5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label2_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>规格上限=0.000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label2_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>目标值=0.900</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label2_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>规格下限=0.000</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QPushButton" name="spc_btn1_2">
    <property name="geometry">
     <rect>
-     <x>1750</x>
+     <x>1760</x>
      <y>90</y>
      <width>101</width>
      <height>41</height>
